@@ -1,0 +1,16 @@
+{block content}
+	<h4 class="text-center">{$item->author}</h4>
+	<h3 class="text-center">{$item->title}</h3>
+	<p>{$item->anotation}</p>
+	<hr>
+	<p class="text-center">Literární druh: {$item->category} | Rok: {$item->year}</p>
+	<p class="text-center">Hodnocení: {for $x = 0; $x < $item->stars; $x++}&#9733;{/for}</p>
+	<a n:href="Item:list">Zpět na úvodní stránku</a>
+{/block}
+
+{block scripts}
+{include parent}
+{/block}
+
+{block head}
+{/block}

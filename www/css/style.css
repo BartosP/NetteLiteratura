@@ -1,0 +1,60 @@
+body {
+    background-color: white !important;
+}
+
+h1 {
+    color: white !important;
+    font-size: 80px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h2 {
+    color: orange !important;
+    font-size: 20px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h3 {
+    color: darkred !important;
+    text-transform: uppercase !important;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5 {
+    font-size: 25px;
+    color: darkred !important;
+}
+
+header {
+    background-color: darkred;
+    padding: 30px;
+}
+
+footer {
+    color: grey;
+}
+
+hr {
+    width: 98%;
+    background-color: lightgrey;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 5px 10px 15px 5px;
+}
+
+thead {
+    background-color: rgb(240, 170, 170);
+}
+
+.btn-primary {
+    color: white !important;
+}

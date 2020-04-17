@@ -1,0 +1,36 @@
+{block content}
+    <table class="table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th><a n:href="list 'title ASC'">Název Díla</a></th>
+                <th><a n:href="list 'author'">Autor</a></th>
+                <th><a n:href="list 'year'">Rok vzniku</a></th>
+                <th><a n:href="list 'category'">Literární druh</a></th>
+                <th>Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach $itemList as $item}
+                <tr>
+                    <td><a n:href="detail $item->id">{$item->title}</a></td>
+                    <td>{$item->author}</td>
+                    <td>{$item->year}</td>
+                    <td>{$item->category}</td>
+                    <td>
+                        <a n:href="Item:update" class="btn btn-secondary">Editace</a>
+                        <a n:href="Item:delete" class="btn btn-danger">Odstranění</a>
+                    </td>
+                </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <br>
+    <a n:href="Item:insert" class="btn btn-primary">Nové dílo</a>
+{/block}
+
+{block scripts}
+{include parent}
+{/block}
+
+{block head}
+{/block}
